@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ddfModelStoreContainer" CdmEntityContainer="ddfEntities2">
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="ddfModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="names" ColumnName="names" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="grad" ColumnName="grad" />
+          <ScalarProperty Name="s_password" ColumnName="s_password" />
+          <ScalarProperty Name="td_id" ColumnName="td_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teachers">
+      <EntityTypeMapping TypeName="ddfModel.teacher">
+        <MappingFragment StoreEntitySet="teacher">
+          <ScalarProperty Name="t_id" ColumnName="t_id" />
+          <ScalarProperty Name="t_name" ColumnName="t_name" />
+          <ScalarProperty Name="t_sybject" ColumnName="t_sybject" />
+          <ScalarProperty Name="t_password" ColumnName="t_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
